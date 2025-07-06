@@ -6,6 +6,9 @@ import { SiteHeader } from "@/components/shared/site-header";
 import { SectionCards } from "@/components/shared/section-cards";
 import { ChartAreaInteractive } from "@/components/shared/chart-area-interactive";
 import { DataTable } from "@/components/shared/data-table";
+import { RangeCalendar } from "@/components/shared/range-calendar";
+import { CustomHeaderCalendar } from "@/components/shared/custom-header-calendar";
+import { DateTimePicker } from "@/components/shared/date-time-picker";
 
 export default function Page() {
   return (
@@ -21,6 +24,11 @@ export default function Page() {
                 <ChartAreaInteractive />
               </div>
               <DataTable data={data} />
+              <div className="p-4 lg:p-6 flex flex-col gap-6">
+                <RangeCalendar />
+                <CustomHeaderCalendar />
+                <DateTimePicker />
+              </div>
             </div>
           </div>
         </div>
