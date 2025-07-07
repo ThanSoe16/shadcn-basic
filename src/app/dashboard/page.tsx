@@ -24,11 +24,6 @@ export default function Page() {
                 <ChartAreaInteractive />
               </div>
               <DataTable data={data} />
-              <div className="p-4 lg:p-6 flex flex-col gap-6">
-                <RangeCalendar />
-                <CustomHeaderCalendar />
-                <DateTimePicker />
-              </div>
             </div>
           </div>
         </div>
